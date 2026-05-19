@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #f5f0e8;
+  --red: #8b2020;
+  --gold: #c9a84c;
+  --dark: #0d0d1a;
+}
+
+body {
+  background: var(--cream);
+}
+
+.font-playfair { font-family: var(--font-playfair), serif; }
+.font-oswald { font-family: var(--font-oswald), sans-serif; }
+.font-lato { font-family: var(--font-lato), sans-serif; }
+
+/* Scrollbar hide */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Slide transition */
+.slide-enter { opacity: 0; }
+.slide-enter-active { opacity: 1; transition: opacity 700ms; }
+.slide-exit { opacity: 1; }
+.slide-exit-active { opacity: 0; transition: opacity 700ms; }
